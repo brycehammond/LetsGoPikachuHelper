@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A6564825C6067200F04F34 /* PokemonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6564725C6067200F04F34 /* PokemonType.swift */; };
+		02A6564D25C60B9700F04F34 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6564C25C60B9700F04F34 /* Pokemon.swift */; };
+		02A6565225C60D5700F04F34 /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6565125C60D5700F04F34 /* PokemonCollectionViewCell.swift */; };
+		02A8B8F125C745F600336B24 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8B8F025C745F600336B24 /* Array+Safe.swift */; };
+		02A8B8F925C74C2400336B24 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8B8F825C74C2400336B24 /* PokemonDetailViewController.swift */; };
+		02A8B8FE25C74F4300336B24 /* PokemonSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8B8FD25C74F4300336B24 /* PokemonSpeaker.swift */; };
+		02E5299125D71B00006EDD92 /* PokemonBattleAdvisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5299025D71B00006EDD92 /* PokemonBattleAdvisor.swift */; };
+		02E5299625D71B4E006EDD92 /* BattleAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5299525D71B4E006EDD92 /* BattleAdvice.swift */; };
+		02EAF2CB25B38B89002AFFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2CA25B38B89002AFFC2 /* AppDelegate.swift */; };
+		02EAF2CD25B38B89002AFFC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2CC25B38B89002AFFC2 /* SceneDelegate.swift */; };
+		02EAF2CF25B38B89002AFFC2 /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2CE25B38B89002AFFC2 /* PokemonListViewController.swift */; };
+		02EAF2D225B38B89002AFFC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EAF2D025B38B89002AFFC2 /* Main.storyboard */; };
+		02EAF2D425B38B8B002AFFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EAF2D325B38B8B002AFFC2 /* Assets.xcassets */; };
+		02EAF2D725B38B8B002AFFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EAF2D525B38B8B002AFFC2 /* LaunchScreen.storyboard */; };
+		02EAF2E225B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2E125B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift */; };
+		02EAF2ED25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2EC25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02EAF2DE25B38B8B002AFFC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02EAF2BF25B38B89002AFFC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02EAF2C625B38B89002AFFC2;
+			remoteInfo = LetsGoPikachuHelper;
+		};
+		02EAF2E925B38B8B002AFFC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02EAF2BF25B38B89002AFFC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02EAF2C625B38B89002AFFC2;
+			remoteInfo = LetsGoPikachuHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A6564725C6067200F04F34 /* PokemonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonType.swift; sourceTree = "<group>"; };
+		02A6564C25C60B9700F04F34 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		02A6565125C60D5700F04F34 /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
+		02A8B8F025C745F600336B24 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		02A8B8F825C74C2400336B24 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		02A8B8FD25C74F4300336B24 /* PokemonSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSpeaker.swift; sourceTree = "<group>"; };
+		02E5299025D71B00006EDD92 /* PokemonBattleAdvisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonBattleAdvisor.swift; sourceTree = "<group>"; };
+		02E5299525D71B4E006EDD92 /* BattleAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAdvice.swift; sourceTree = "<group>"; };
+		02EAF2C725B38B89002AFFC2 /* LetsGoPikachuHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGoPikachuHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EAF2CA25B38B89002AFFC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02EAF2CC25B38B89002AFFC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		02EAF2CE25B38B89002AFFC2 /* PokemonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
+		02EAF2D125B38B89002AFFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02EAF2D325B38B8B002AFFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02EAF2D625B38B8B002AFFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02EAF2D825B38B8B002AFFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EAF2DD25B38B8B002AFFC2 /* LetsGoPikachuHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGoPikachuHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EAF2E125B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoPikachuHelperTests.swift; sourceTree = "<group>"; };
+		02EAF2E325B38B8B002AFFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EAF2E825B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGoPikachuHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EAF2EC25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoPikachuHelperUITests.swift; sourceTree = "<group>"; };
+		02EAF2EE25B38B8B002AFFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02EAF2C425B38B89002AFFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EAF2DA25B38B8B002AFFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EAF2E525B38B8B002AFFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A6564225C6055900F04F34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02A6565125C60D5700F04F34 /* PokemonCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02A6564325C6056600F04F34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02A6564725C6067200F04F34 /* PokemonType.swift */,
+				02A6564C25C60B9700F04F34 /* Pokemon.swift */,
+				02A8B8FD25C74F4300336B24 /* PokemonSpeaker.swift */,
+				02E5299025D71B00006EDD92 /* PokemonBattleAdvisor.swift */,
+				02E5299525D71B4E006EDD92 /* BattleAdvice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02A8B8B225C7448F00336B24 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02A8B8F025C745F600336B24 /* Array+Safe.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02EAF2BE25B38B89002AFFC2 = {
+			isa = PBXGroup;
+			children = (
+				02EAF2C925B38B89002AFFC2 /* LetsGoPikachuHelper */,
+				02EAF2E025B38B8B002AFFC2 /* LetsGoPikachuHelperTests */,
+				02EAF2EB25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests */,
+				02EAF2C825B38B89002AFFC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02EAF2C825B38B89002AFFC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02EAF2C725B38B89002AFFC2 /* LetsGoPikachuHelper.app */,
+				02EAF2DD25B38B8B002AFFC2 /* LetsGoPikachuHelperTests.xctest */,
+				02EAF2E825B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02EAF2C925B38B89002AFFC2 /* LetsGoPikachuHelper */ = {
+			isa = PBXGroup;
+			children = (
+				02EAF30225B4DB74002AFFC2 /* Storyboards */,
+				02EAF30125B4DB6A002AFFC2 /* ViewControllers */,
+				02A6564225C6055900F04F34 /* Views */,
+				02A6564325C6056600F04F34 /* Models */,
+				02A8B8B225C7448F00336B24 /* Extensions */,
+				02EAF2CA25B38B89002AFFC2 /* AppDelegate.swift */,
+				02EAF2CC25B38B89002AFFC2 /* SceneDelegate.swift */,
+				02EAF2D325B38B8B002AFFC2 /* Assets.xcassets */,
+				02EAF2D525B38B8B002AFFC2 /* LaunchScreen.storyboard */,
+				02EAF2D825B38B8B002AFFC2 /* Info.plist */,
+			);
+			path = LetsGoPikachuHelper;
+			sourceTree = "<group>";
+		};
+		02EAF2E025B38B8B002AFFC2 /* LetsGoPikachuHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				02EAF2E125B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift */,
+				02EAF2E325B38B8B002AFFC2 /* Info.plist */,
+			);
+			path = LetsGoPikachuHelperTests;
+			sourceTree = "<group>";
+		};
+		02EAF2EB25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02EAF2EC25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift */,
+				02EAF2EE25B38B8B002AFFC2 /* Info.plist */,
+			);
+			path = LetsGoPikachuHelperUITests;
+			sourceTree = "<group>";
+		};
+		02EAF30125B4DB6A002AFFC2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				02EAF2CE25B38B89002AFFC2 /* PokemonListViewController.swift */,
+				02A8B8F825C74C2400336B24 /* PokemonDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		02EAF30225B4DB74002AFFC2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				02EAF2D025B38B89002AFFC2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02EAF2C625B38B89002AFFC2 /* LetsGoPikachuHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EAF2F125B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelper" */;
+			buildPhases = (
+				02EAF2C325B38B89002AFFC2 /* Sources */,
+				02EAF2C425B38B89002AFFC2 /* Frameworks */,
+				02EAF2C525B38B89002AFFC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsGoPikachuHelper;
+			productName = LetsGoPikachuHelper;
+			productReference = 02EAF2C725B38B89002AFFC2 /* LetsGoPikachuHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02EAF2DC25B38B8B002AFFC2 /* LetsGoPikachuHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EAF2F425B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelperTests" */;
+			buildPhases = (
+				02EAF2D925B38B8B002AFFC2 /* Sources */,
+				02EAF2DA25B38B8B002AFFC2 /* Frameworks */,
+				02EAF2DB25B38B8B002AFFC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02EAF2DF25B38B8B002AFFC2 /* PBXTargetDependency */,
+			);
+			name = LetsGoPikachuHelperTests;
+			productName = LetsGoPikachuHelperTests;
+			productReference = 02EAF2DD25B38B8B002AFFC2 /* LetsGoPikachuHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02EAF2E725B38B8B002AFFC2 /* LetsGoPikachuHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EAF2F725B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelperUITests" */;
+			buildPhases = (
+				02EAF2E425B38B8B002AFFC2 /* Sources */,
+				02EAF2E525B38B8B002AFFC2 /* Frameworks */,
+				02EAF2E625B38B8B002AFFC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02EAF2EA25B38B8B002AFFC2 /* PBXTargetDependency */,
+			);
+			name = LetsGoPikachuHelperUITests;
+			productName = LetsGoPikachuHelperUITests;
+			productReference = 02EAF2E825B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02EAF2BF25B38B89002AFFC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					02EAF2C625B38B89002AFFC2 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					02EAF2DC25B38B8B002AFFC2 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 02EAF2C625B38B89002AFFC2;
+					};
+					02EAF2E725B38B8B002AFFC2 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 02EAF2C625B38B89002AFFC2;
+					};
+				};
+			};
+			buildConfigurationList = 02EAF2C225B38B89002AFFC2 /* Build configuration list for PBXProject "LetsGoPikachuHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02EAF2BE25B38B89002AFFC2;
+			productRefGroup = 02EAF2C825B38B89002AFFC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02EAF2C625B38B89002AFFC2 /* LetsGoPikachuHelper */,
+				02EAF2DC25B38B8B002AFFC2 /* LetsGoPikachuHelperTests */,
+				02EAF2E725B38B8B002AFFC2 /* LetsGoPikachuHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02EAF2C525B38B89002AFFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EAF2D725B38B8B002AFFC2 /* LaunchScreen.storyboard in Resources */,
+				02EAF2D425B38B8B002AFFC2 /* Assets.xcassets in Resources */,
+				02EAF2D225B38B89002AFFC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EAF2DB25B38B8B002AFFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EAF2E625B38B8B002AFFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02EAF2C325B38B89002AFFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A6564D25C60B9700F04F34 /* Pokemon.swift in Sources */,
+				02EAF2CF25B38B89002AFFC2 /* PokemonListViewController.swift in Sources */,
+				02A8B8FE25C74F4300336B24 /* PokemonSpeaker.swift in Sources */,
+				02EAF2CB25B38B89002AFFC2 /* AppDelegate.swift in Sources */,
+				02E5299625D71B4E006EDD92 /* BattleAdvice.swift in Sources */,
+				02E5299125D71B00006EDD92 /* PokemonBattleAdvisor.swift in Sources */,
+				02A8B8F125C745F600336B24 /* Array+Safe.swift in Sources */,
+				02EAF2CD25B38B89002AFFC2 /* SceneDelegate.swift in Sources */,
+				02A8B8F925C74C2400336B24 /* PokemonDetailViewController.swift in Sources */,
+				02A6565225C60D5700F04F34 /* PokemonCollectionViewCell.swift in Sources */,
+				02A6564825C6067200F04F34 /* PokemonType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EAF2D925B38B8B002AFFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EAF2E225B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EAF2E425B38B8B002AFFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EAF2ED25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02EAF2DF25B38B8B002AFFC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02EAF2C625B38B89002AFFC2 /* LetsGoPikachuHelper */;
+			targetProxy = 02EAF2DE25B38B8B002AFFC2 /* PBXContainerItemProxy */;
+		};
+		02EAF2EA25B38B8B002AFFC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02EAF2C625B38B89002AFFC2 /* LetsGoPikachuHelper */;
+			targetProxy = 02EAF2E925B38B8B002AFFC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02EAF2D025B38B89002AFFC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EAF2D125B38B89002AFFC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02EAF2D525B38B8B002AFFC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02EAF2D625B38B8B002AFFC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02EAF2EF25B38B8B002AFFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02EAF2F025B38B8B002AFFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02EAF2F225B38B8B002AFFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MW535NRK9;
+				INFOPLIST_FILE = LetsGoPikachuHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fluidvisiondesign.LetsGoPikachuHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		02EAF2F325B38B8B002AFFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MW535NRK9;
+				INFOPLIST_FILE = LetsGoPikachuHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fluidvisiondesign.LetsGoPikachuHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		02EAF2F525B38B8B002AFFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MW535NRK9;
+				INFOPLIST_FILE = LetsGoPikachuHelperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fluidvisiondesign.LetsGoPikachuHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsGoPikachuHelper.app/LetsGoPikachuHelper";
+			};
+			name = Debug;
+		};
+		02EAF2F625B38B8B002AFFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MW535NRK9;
+				INFOPLIST_FILE = LetsGoPikachuHelperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fluidvisiondesign.LetsGoPikachuHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsGoPikachuHelper.app/LetsGoPikachuHelper";
+			};
+			name = Release;
+		};
+		02EAF2F825B38B8B002AFFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MW535NRK9;
+				INFOPLIST_FILE = LetsGoPikachuHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fluidvisiondesign.LetsGoPikachuHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LetsGoPikachuHelper;
+			};
+			name = Debug;
+		};
+		02EAF2F925B38B8B002AFFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MW535NRK9;
+				INFOPLIST_FILE = LetsGoPikachuHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fluidvisiondesign.LetsGoPikachuHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LetsGoPikachuHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02EAF2C225B38B89002AFFC2 /* Build configuration list for PBXProject "LetsGoPikachuHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EAF2EF25B38B8B002AFFC2 /* Debug */,
+				02EAF2F025B38B8B002AFFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02EAF2F125B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EAF2F225B38B8B002AFFC2 /* Debug */,
+				02EAF2F325B38B8B002AFFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02EAF2F425B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EAF2F525B38B8B002AFFC2 /* Debug */,
+				02EAF2F625B38B8B002AFFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02EAF2F725B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EAF2F825B38B8B002AFFC2 /* Debug */,
+				02EAF2F925B38B8B002AFFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02EAF2BF25B38B89002AFFC2 /* Project object */;
+}

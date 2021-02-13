@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "pokemon_by_first_letter.json",
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.json"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
