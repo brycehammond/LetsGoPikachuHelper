@@ -14,7 +14,6 @@ class PokemonCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var firstTypeView: UIImageView!
     @IBOutlet private weak var secondTypeView: UIImageView!
-    @IBOutlet private weak var thirdTypeView: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,7 +36,6 @@ class PokemonCollectionViewCell: UICollectionViewCell {
                 imageView.image = pokemon.image()
                 firstTypeView.image = pokemon.types[safeIndex: 0]?.icon()
                 secondTypeView.image = pokemon.types[safeIndex: 1]?.icon()
-                thirdTypeView.image = pokemon.types[safeIndex: 2]?.icon()
             }
         }
     }

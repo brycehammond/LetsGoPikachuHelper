@@ -77,13 +77,6 @@
                                                         <constraint firstAttribute="height" constant="40" id="Nb3-Eu-dSl"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poison-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tvy-de-3c4" userLabel="Third Type View">
-                                                    <rect key="frame" x="158" y="58" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="CUK-M7-Agn"/>
-                                                        <constraint firstAttribute="height" constant="40" id="XF7-mE-vbr"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJy-zL-SZF">
                                                     <rect key="frame" x="8" y="153" width="184" height="40"/>
                                                     <constraints>
@@ -102,9 +95,7 @@
                                                 <constraint firstItem="AMc-Ah-lcB" firstAttribute="top" secondItem="NLl-Uf-k8R" secondAttribute="top" constant="10" id="CWl-aR-sZA"/>
                                                 <constraint firstAttribute="trailing" secondItem="LPm-g1-YGU" secondAttribute="trailing" constant="2" id="E2Y-LQ-8Py"/>
                                                 <constraint firstItem="lyj-jn-z7A" firstAttribute="top" secondItem="NLl-Uf-k8R" secondAttribute="top" constant="2" id="YcK-He-U1U"/>
-                                                <constraint firstItem="tvy-de-3c4" firstAttribute="top" secondItem="LPm-g1-YGU" secondAttribute="bottom" constant="-12" id="Z0d-1N-GZH"/>
                                                 <constraint firstAttribute="trailing" secondItem="lyj-jn-z7A" secondAttribute="trailing" constant="2" id="Zdi-Hi-egX"/>
-                                                <constraint firstAttribute="trailing" secondItem="tvy-de-3c4" secondAttribute="trailing" constant="2" id="a9o-Ee-Sxd"/>
                                                 <constraint firstItem="LPm-g1-YGU" firstAttribute="top" secondItem="lyj-jn-z7A" secondAttribute="bottom" constant="-12" id="r0B-dm-O9m"/>
                                                 <constraint firstItem="AMc-Ah-lcB" firstAttribute="leading" secondItem="NLl-Uf-k8R" secondAttribute="leading" constant="30" id="ro6-y3-Hk2"/>
                                                 <constraint firstAttribute="trailing" secondItem="AMc-Ah-lcB" secondAttribute="trailing" constant="30" id="vIh-I1-Yoa"/>
@@ -117,7 +108,6 @@
                                             <outlet property="imageView" destination="AMc-Ah-lcB" id="6R1-eP-LYP"/>
                                             <outlet property="nameButton" destination="xJy-zL-SZF" id="Jd2-Tv-oyA"/>
                                             <outlet property="secondTypeView" destination="LPm-g1-YGU" id="t2q-bw-h6E"/>
-                                            <outlet property="thirdTypeView" destination="tvy-de-3c4" id="HMr-Ah-epc"/>
                                             <segue destination="Bju-Ab-HtX" kind="show" id="k1y-Va-DLz"/>
                                         </connections>
                                     </collectionViewCell>
@@ -161,14 +151,32 @@
                                         <rect key="frame" x="0.0" y="5" width="810" height="290"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aIA-Wm-59b">
+                                        <rect key="frame" x="672" y="8" width="130" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="J92-eN-C5T"/>
+                                            <constraint firstAttribute="height" constant="50" id="wVR-m5-fdK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-B4-D59">
+                                        <rect key="frame" x="672" y="48" width="130" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="OoL-Hv-2Bc"/>
+                                            <constraint firstAttribute="height" constant="50" id="fML-EP-9w5"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="4KC-iQ-Wlv" secondAttribute="trailing" id="6X5-wE-9bP"/>
+                                    <constraint firstItem="Dkl-B4-D59" firstAttribute="top" secondItem="aIA-Wm-59b" secondAttribute="bottom" constant="-10" id="9vI-P5-QFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dkl-B4-D59" secondAttribute="trailing" constant="8" id="Ef8-lo-r80"/>
+                                    <constraint firstAttribute="trailing" secondItem="aIA-Wm-59b" secondAttribute="trailing" constant="8" id="MHp-oP-Osl"/>
                                     <constraint firstAttribute="height" constant="300" id="SRt-Wa-M6s"/>
                                     <constraint firstItem="4KC-iQ-Wlv" firstAttribute="top" secondItem="v81-kQ-e28" secondAttribute="top" constant="5" id="SjK-5E-zWp"/>
                                     <constraint firstAttribute="bottom" secondItem="4KC-iQ-Wlv" secondAttribute="bottom" constant="5" id="hf1-UA-uCW"/>
                                     <constraint firstItem="4KC-iQ-Wlv" firstAttribute="leading" secondItem="v81-kQ-e28" secondAttribute="leading" id="iSf-pp-BrO"/>
+                                    <constraint firstItem="aIA-Wm-59b" firstAttribute="top" secondItem="v81-kQ-e28" secondAttribute="top" constant="8" id="jvm-Nb-UKa"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19q-QH-Ykm">
@@ -297,7 +305,9 @@
                     <connections>
                         <outlet property="badTypesTableView" destination="L7Q-hK-F0o" id="6sF-RD-cy2"/>
                         <outlet property="detailImageView" destination="4KC-iQ-Wlv" id="8AX-x0-5bh"/>
+                        <outlet property="firstTypeImageView" destination="aIA-Wm-59b" id="leH-vK-c3e"/>
                         <outlet property="goodTypesTableView" destination="DTl-7C-LmF" id="uRC-iw-dKX"/>
+                        <outlet property="secondTypeImageView" destination="Dkl-B4-D59" id="PWJ-6Y-DGW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cl9-ba-NA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

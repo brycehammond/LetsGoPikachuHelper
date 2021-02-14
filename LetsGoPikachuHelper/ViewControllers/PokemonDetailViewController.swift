@@ -12,6 +12,8 @@ class PokemonDetailViewController: UIViewController {
     @IBOutlet private weak var detailImageView: UIImageView!
     @IBOutlet private weak var goodTypesTableView: UITableView!
     @IBOutlet private weak var badTypesTableView: UITableView!
+    @IBOutlet private weak var firstTypeImageView: UIImageView!
+    @IBOutlet private weak var secondTypeImageView: UIImageView!
 
     var pokemon: Pokemon?
     private var battleAdvice = BattleAdvice(goodTypes: [], badTypes: [])
@@ -24,7 +26,9 @@ class PokemonDetailViewController: UIViewController {
 
     private func updateDetail() {
         detailImageView.image = pokemon?.image()
-        self.title = pokemon?.name.uppercased()
+        title = pokemon?.name.uppercased()
+        firstTypeImageView.image = pokemon?.types[safeIndex: 0]?.slug()
+        secondTypeImageView.image = pokemon?.types[safeIndex: 1]?.slug()
 
         if let pokemon = pokemon {
             battleAdvice = PokemonBattleAdvisor.shared.getBattleAdviceFor(opponent: pokemon)
