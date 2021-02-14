@@ -32,30 +32,108 @@ class PokemonBattleAdvisor {
 
     func getBattleAdviceFor(opponent: Pokemon) -> BattleAdvice {
 
-        var goodChoices = [TypeEffectiveness]()
-        var badChoices = [TypeEffectiveness]()
+        let (goodDefenseTypes, badDefenseTypes) = getDefenseTypes(for: opponent)
+        let (goodAttackTypes, badAttackTypes) = getAttackTypes(for: opponent)
+        let (goodTypes, badTypes) = resolvedGoodAndBadTypes(goodAttackTypes: goodAttackTypes,
+                                                            badAttackTypes: badAttackTypes,
+                                                            goodDefenseTypes: goodDefenseTypes,
+                                                            badDefenseTypes: badDefenseTypes)
+
+
+
+        return BattleAdvice(goodTypes: goodTypes, badTypes: badTypes)
+    }
+}
+
+private extension PokemonBattleAdvisor {
+
+    private func resolvedGoodAndBadTypes(goodAttackTypes: [TypeEffectiveness],
+                                            badAttackTypes: [TypeEffectiveness],
+                                            goodDefenseTypes: [TypeEffectiveness],
+                                            badDefenseTypes: [TypeEffectiveness]) -> (good: [PokemonType],
+                                                                                      bad: [PokemonType]) {
+        var badTypes = badAttackTypes.map { $0.type }
+        badTypes.append(contentsOf: badDefenseTypes.map { $0.type })
+
+        //Move types that occur more than once to the top
+        badTypes = consolidatePopularTypes(badTypes)
+
+        var goodTypes = goodDefenseTypes.map({ $0.type })
+        goodTypes.append(contentsOf: goodAttackTypes.map({ $0.type }))
+
+        //Move types that occur more than once to the top
+        goodTypes = consolidatePopularTypes(goodTypes)
+
+        //take any bad types out of the good
+        goodTypes = goodTypes.filter { badTypes.contains($0) == false }
+
+        return (goodTypes, badTypes)
+    }
+
+    private func consolidatePopularTypes(_ types: [PokemonType]) -> [PokemonType] {
+
+        return types.reduce([PokemonType: Int](), { result, type in
+                                var newResult = result
+                                newResult[type] = result[type] ?? 0
+                                newResult[type]! += 1
+                                return newResult })
+                    .map { return (type: $0, value: $1) }
+                    .sorted { $0.value > $1.value }
+                    .map { $0.type }
+    }
+
+
+    private func getAttackTypes(for opponent: Pokemon) -> (good: [TypeEffectiveness],
+                                                           bad: [TypeEffectiveness]) {
+        var goodAttackTypes = [TypeEffectiveness]()
+        var badAttackTypes = [TypeEffectiveness]()
 
         for type in Self.types {
-            if opponent.types.contains(type) {
-                //see what NOT to play that this type is effective against
-                
-            }
-
             if let attackEffectiveness = attackGrid[type] {
                 for (defenseType, effectiveness) in attackEffectiveness {
                     if opponent.types.contains(defenseType) {
-                        //Take which attacks types are effective against this type
-
+                        if effectiveness > 1 {
+                            //This type is effective in attacking them
+                            goodAttackTypes.append(TypeEffectiveness(type: defenseType, value: effectiveness))
+                        } else if effectiveness < 1 {
+                            //This type sucks
+                            badAttackTypes.append(TypeEffectiveness(type: defenseType, value: effectiveness))
+                        }
                     }
                 }
             }
         }
 
-        return BattleAdvice(goodTypes: [], badTypes: [])
-    }
-}
+        badAttackTypes.sort { $0.value < $1.value }
 
-private extension PokemonBattleAdvisor {
+        return (goodAttackTypes, badAttackTypes)
+    }
+
+    private func getDefenseTypes(for opponent: Pokemon) -> (good: [TypeEffectiveness],
+                                                            bad: [TypeEffectiveness])  {
+        var goodDefenseTypes = [TypeEffectiveness]()
+        var badDefenseTypes = [TypeEffectiveness]()
+
+        for type in Self.types {
+            if opponent.types.contains(type) {
+                if let attackEffectiveness = attackGrid[type] {
+                    for (attackType, effectiveness) in attackEffectiveness {
+                        if effectiveness > 1 {
+                            //They have elevated attacks against these types
+                            badDefenseTypes.append(TypeEffectiveness(type: attackType, value: effectiveness))
+                        } else if effectiveness < 1 {
+                            //they have reduced attacks against these types
+                            goodDefenseTypes.append(TypeEffectiveness(type: attackType, value: effectiveness))
+                        }
+                    }
+                }
+            }
+        }
+
+        goodDefenseTypes.sort { $0.value < $1.value }
+
+        return (goodDefenseTypes, badDefenseTypes)
+    }
 
     func buildAttackTable() -> [PokemonType: [PokemonType: Float]] {
 
