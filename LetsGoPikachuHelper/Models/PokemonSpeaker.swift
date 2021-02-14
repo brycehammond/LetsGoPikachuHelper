@@ -11,7 +11,7 @@ import AVFoundation
 class PokemonSpeaker {
 
     class func speakName(of pokemon: Pokemon) {
-        let utterance = AVSpeechUtterance(string: pokemon.name.capitalized)
+        let utterance = AVSpeechUtterance(string: pokemon.name)
         utterance.rate = 0.5
         //utterance.pitchMultiplier = 0.2
         utterance.postUtteranceDelay = 0.2
@@ -23,4 +23,19 @@ class PokemonSpeaker {
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
     }
+
+    class func speakType(_ type: PokemonType) {
+        let utterance = AVSpeechUtterance(string: type.rawValue)
+        utterance.rate = 0.5
+        //utterance.pitchMultiplier = 0.2
+        utterance.postUtteranceDelay = 0.2
+        utterance.volume = 0.8
+
+        let voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance.voice = voice
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+
 }

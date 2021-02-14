@@ -214,6 +214,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Bju-Ab-HtX" id="Grk-R8-bJh"/>
+                                    <outlet property="delegate" destination="Bju-Ab-HtX" id="Uwp-5A-602"/>
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L7Q-hK-F0o">
@@ -247,6 +248,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Bju-Ab-HtX" id="KtW-Mg-UfU"/>
+                                    <outlet property="delegate" destination="Bju-Ab-HtX" id="rae-ac-oRE"/>
                                 </connections>
                             </tableView>
                         </subviews>

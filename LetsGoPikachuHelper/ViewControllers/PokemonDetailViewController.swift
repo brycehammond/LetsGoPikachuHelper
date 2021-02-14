@@ -70,3 +70,24 @@ extension PokemonDetailViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension PokemonDetailViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        var type: PokemonType?
+        switch tableView {
+        case goodTypesTableView:
+            type = battleAdvice.goodTypes[indexPath.row]
+        case badTypesTableView:
+            type = battleAdvice.badTypes[indexPath.row]
+        default:
+            break
+        }
+
+        if let type = type {
+            PokemonSpeaker.speakType(type)
+        }
+    }
+
+}
