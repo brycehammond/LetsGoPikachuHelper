@@ -39,8 +39,6 @@ class PokemonBattleAdvisor {
                                                             goodDefenseTypes: goodDefenseTypes,
                                                             badDefenseTypes: badDefenseTypes)
 
-
-
         return BattleAdvice(goodTypes: goodTypes, badTypes: badTypes)
     }
 }
