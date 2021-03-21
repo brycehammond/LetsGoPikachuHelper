@@ -232,7 +232,6 @@
 				58A8FB9B1DBE5AEC1F56A552 /* Pods-LetsGoPikachuHelperTests.debug.xcconfig */,
 				CB9FE8AA40DD4B3B6E959EA3 /* Pods-LetsGoPikachuHelperTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -647,6 +646,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MW535NRK9;
 				INFOPLIST_FILE = LetsGoPikachuHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,7 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = design.fluidvision.LGPikachuHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -667,6 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MW535NRK9;
 				INFOPLIST_FILE = LetsGoPikachuHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,7 +675,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = design.fluidvision.LGPikachuHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

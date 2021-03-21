@@ -74,3 +74,13 @@ extension PokemonListViewController: UICollectionViewDataSource {
         return IndexPath(row: index, section: 0)
     }
 }
+
+extension PokemonListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return CGSize(width: 140, height: 140)
+        } else {
+            return CGSize(width: 200, height: 200)
+        }
+    }
+}
