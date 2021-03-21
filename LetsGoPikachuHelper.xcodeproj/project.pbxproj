@@ -24,6 +24,7 @@
 		02EAF2D725B38B8B002AFFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EAF2D525B38B8B002AFFC2 /* LaunchScreen.storyboard */; };
 		02EAF2E225B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2E125B38B8B002AFFC2 /* LetsGoPikachuHelperTests.swift */; };
 		02EAF2ED25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF2EC25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift */; };
+		079B14AEA6D2060A4AFC56EA /* Pods_LetsGoPikachuHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E851C55CF2E419041A651156 /* Pods_LetsGoPikachuHelper.framework */; };
 		55FAB92DE8AE1213F1B175FE /* Pods_LetsGoPikachuHelper_LetsGoPikachuHelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39D17133D228D300BA8BD5D /* Pods_LetsGoPikachuHelper_LetsGoPikachuHelperUITests.framework */; };
 		86E0399F0DECE01D6EDC074B /* Pods_LetsGoPikachuHelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B665E0E4F7F6D6CAD8D83F2 /* Pods_LetsGoPikachuHelperTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,9 +70,15 @@
 		02EAF2E825B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGoPikachuHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EAF2EC25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoPikachuHelperUITests.swift; sourceTree = "<group>"; };
 		02EAF2EE25B38B8B002AFFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CCB6BFC032CE61A1A2912D /* Pods-LetsGoPikachuHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoPikachuHelper.debug.xcconfig"; path = "Target Support Files/Pods-LetsGoPikachuHelper/Pods-LetsGoPikachuHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		58A8FB9B1DBE5AEC1F56A552 /* Pods-LetsGoPikachuHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoPikachuHelperTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsGoPikachuHelperTests/Pods-LetsGoPikachuHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B665E0E4F7F6D6CAD8D83F2 /* Pods_LetsGoPikachuHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGoPikachuHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39D17133D228D300BA8BD5D /* Pods_LetsGoPikachuHelper_LetsGoPikachuHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGoPikachuHelper_LetsGoPikachuHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DFCC7B51B87F6DEAD26355 /* Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.debug.xcconfig"; path = "Target Support Files/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A750DF1E97CC5745F8729913 /* Pods-LetsGoPikachuHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoPikachuHelper.release.xcconfig"; path = "Target Support Files/Pods-LetsGoPikachuHelper/Pods-LetsGoPikachuHelper.release.xcconfig"; sourceTree = "<group>"; };
+		CB9FE8AA40DD4B3B6E959EA3 /* Pods-LetsGoPikachuHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoPikachuHelperTests.release.xcconfig"; path = "Target Support Files/Pods-LetsGoPikachuHelperTests/Pods-LetsGoPikachuHelperTests.release.xcconfig"; sourceTree = "<group>"; };
 		E851C55CF2E419041A651156 /* Pods_LetsGoPikachuHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGoPikachuHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0CBA102321F07269868534 /* Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.release.xcconfig"; path = "Target Support Files/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079B14AEA6D2060A4AFC56EA /* Pods_LetsGoPikachuHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +146,7 @@
 				02EAF2EB25B38B8B002AFFC2 /* LetsGoPikachuHelperUITests */,
 				02EAF2C825B38B89002AFFC2 /* Products */,
 				0863A2A6E60C4C81CB06D88F /* Frameworks */,
+				8D5253960394F47D5252ED43 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +222,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D5253960394F47D5252ED43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32CCB6BFC032CE61A1A2912D /* Pods-LetsGoPikachuHelper.debug.xcconfig */,
+				A750DF1E97CC5745F8729913 /* Pods-LetsGoPikachuHelper.release.xcconfig */,
+				A5DFCC7B51B87F6DEAD26355 /* Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.debug.xcconfig */,
+				FC0CBA102321F07269868534 /* Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.release.xcconfig */,
+				58A8FB9B1DBE5AEC1F56A552 /* Pods-LetsGoPikachuHelperTests.debug.xcconfig */,
+				CB9FE8AA40DD4B3B6E959EA3 /* Pods-LetsGoPikachuHelperTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02EAF2F125B38B8B002AFFC2 /* Build configuration list for PBXNativeTarget "LetsGoPikachuHelper" */;
 			buildPhases = (
+				DA8B63B71FC239C4831AC979 /* [CP] Check Pods Manifest.lock */,
 				02EAF2C325B38B89002AFFC2 /* Sources */,
 				02EAF2C425B38B89002AFFC2 /* Frameworks */,
 				02EAF2C525B38B89002AFFC2 /* Resources */,
@@ -241,6 +265,7 @@
 				02EAF2D925B38B8B002AFFC2 /* Sources */,
 				02EAF2DA25B38B8B002AFFC2 /* Frameworks */,
 				02EAF2DB25B38B8B002AFFC2 /* Resources */,
+				CE7AAB19AF2F483610F95804 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,7 +285,6 @@
 				02EAF2E425B38B8B002AFFC2 /* Sources */,
 				02EAF2E525B38B8B002AFFC2 /* Frameworks */,
 				02EAF2E625B38B8B002AFFC2 /* Resources */,
-				8F3F2488D7C685C2CC6FD427 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,23 +366,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8F3F2488D7C685C2CC6FD427 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests/Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C81B3FF7C2B3A1158464175D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +382,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LetsGoPikachuHelperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7AAB19AF2F483610F95804 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsGoPikachuHelperTests/Pods-LetsGoPikachuHelperTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsGoPikachuHelperTests/Pods-LetsGoPikachuHelperTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsGoPikachuHelperTests/Pods-LetsGoPikachuHelperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8B63B71FC239C4831AC979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsGoPikachuHelper-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -594,6 +640,7 @@
 		};
 		02EAF2F225B38B8B002AFFC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CCB6BFC032CE61A1A2912D /* Pods-LetsGoPikachuHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -613,6 +660,7 @@
 		};
 		02EAF2F325B38B8B002AFFC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A750DF1E97CC5745F8729913 /* Pods-LetsGoPikachuHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -632,6 +680,7 @@
 		};
 		02EAF2F525B38B8B002AFFC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A8FB9B1DBE5AEC1F56A552 /* Pods-LetsGoPikachuHelperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,6 +703,7 @@
 		};
 		02EAF2F625B38B8B002AFFC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9FE8AA40DD4B3B6E959EA3 /* Pods-LetsGoPikachuHelperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -676,6 +726,7 @@
 		};
 		02EAF2F825B38B8B002AFFC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DFCC7B51B87F6DEAD26355 /* Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -696,6 +747,7 @@
 		};
 		02EAF2F925B38B8B002AFFC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0CBA102321F07269868534 /* Pods-LetsGoPikachuHelper-LetsGoPikachuHelperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

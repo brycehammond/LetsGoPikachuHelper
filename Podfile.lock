@@ -1,0 +1,16 @@
+PODS:
+  - Nimble (9.0.0)
+
+DEPENDENCIES:
+  - Nimble (~> 9)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+
+SPEC CHECKSUMS:
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+
+PODFILE CHECKSUM: 8e56c8ec942e05e29cb001f5c839d30a20f302c4
+
+COCOAPODS: 1.10.1
