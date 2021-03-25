@@ -10,24 +10,20 @@ import UIKit
 class PokemonListViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView?
-    
-    lazy var pokemonByFirstLetter: [String: [Pokemon]] = {
-        guard let asset = NSDataAsset(name: "PokemonByLetter") else {
-            fatalError("Missing data asset: PokemonByLetter")
-        }
-        
-        return try! JSONDecoder().decode([String: [Pokemon]].self, from: asset.data)
-    }()
-    
+
+    private let pokemonDataController = PokemonDataController()
     var sectionLetters = [String]()
     var pokemon = [Pokemon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sectionLetters = pokemonByFirstLetter.keys.sorted()
-        for section in sectionLetters {
-            if let alphabetizedPokemon = pokemonByFirstLetter[section] {
-                pokemon.append(contentsOf: alphabetizedPokemon)
+        collectionView?.alpha = 0.0
+        pokemonDataController.fetchPokemon { [weak self] sectionLetters, pokemon in
+            self?.sectionLetters = sectionLetters
+            self?.pokemon = pokemon
+            self?.collectionView?.reloadData()
+            UIView.animate(withDuration: 0.3) {
+                self?.collectionView?.alpha = 1.0
             }
         }
     }

@@ -36,8 +36,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P66-qx-Gzx">
-                                <rect key="frame" x="20" y="50" width="770" height="1030"/>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P66-qx-Gzx">
+                                <rect key="frame" x="0.0" y="50" width="810" height="1030"/>
                                 <color key="backgroundColor" name="Background"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" sectionInsetReference="layoutMargins" id="huB-Cc-GEA">
@@ -118,10 +118,10 @@
                         <viewLayoutGuide key="safeArea" id="Dch-BE-FCI"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
-                            <constraint firstItem="P66-qx-Gzx" firstAttribute="leading" secondItem="BGk-Sr-KRH" secondAttribute="leadingMargin" id="2Fa-AT-yDb"/>
+                            <constraint firstItem="P66-qx-Gzx" firstAttribute="leading" secondItem="Dch-BE-FCI" secondAttribute="leading" id="6TQ-y3-c8M"/>
                             <constraint firstItem="P66-qx-Gzx" firstAttribute="bottom" secondItem="BGk-Sr-KRH" secondAttribute="bottomMargin" id="cdz-6y-SUW"/>
                             <constraint firstItem="P66-qx-Gzx" firstAttribute="top" secondItem="BGk-Sr-KRH" secondAttribute="topMargin" id="e9l-Iu-T3n"/>
-                            <constraint firstItem="P66-qx-Gzx" firstAttribute="trailing" secondItem="BGk-Sr-KRH" secondAttribute="trailingMargin" id="xVf-go-8hy"/>
+                            <constraint firstItem="Dch-BE-FCI" firstAttribute="trailing" secondItem="P66-qx-Gzx" secondAttribute="trailing" id="pwH-e2-dsf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pokédex" id="vvu-65-TyS"/>
