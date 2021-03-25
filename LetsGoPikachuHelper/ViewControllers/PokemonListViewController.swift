@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class PokemonListViewController: UIViewController {
 
@@ -18,10 +19,12 @@ class PokemonListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.alpha = 0.0
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
         pokemonDataController.fetchPokemon { [weak self] sectionLetters, pokemon in
             self?.sectionLetters = sectionLetters
             self?.pokemon = pokemon
             self?.collectionView?.reloadData()
+            hud.hide(animated: true)
             UIView.animate(withDuration: 0.3) {
                 self?.collectionView?.alpha = 1.0
             }

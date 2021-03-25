@@ -1,16 +1,20 @@
 PODS:
+  - MBProgressHUD (1.2.0)
   - Nimble (9.0.0)
 
 DEPENDENCIES:
+  - MBProgressHUD (~> 1.2.0)
   - Nimble (~> 9)
 
 SPEC REPOS:
   trunk:
+    - MBProgressHUD
     - Nimble
 
 SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
 
-PODFILE CHECKSUM: 8e56c8ec942e05e29cb001f5c839d30a20f302c4
+PODFILE CHECKSUM: 255539704672ca0fdce1142eba55d188b548b3cd
 
 COCOAPODS: 1.10.1

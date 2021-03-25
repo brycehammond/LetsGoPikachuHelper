@@ -7,6 +7,8 @@ target 'LetsGoPikachuHelper' do
 
   # Pods for LetsGoPikachuHelper
 
+  pod 'MBProgressHUD', '~> 1.2.0'
+
   target 'LetsGoPikachuHelperTests' do
     inherit! :search_paths
     # Pods for testing
