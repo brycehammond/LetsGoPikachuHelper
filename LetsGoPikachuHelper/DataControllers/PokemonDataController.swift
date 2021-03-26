@@ -21,7 +21,7 @@ class PokemonDataController {
     /// Fetches the pokemon and section letters and provide them in the completion
     /// - Parameter completion: A completion block expecting the section letters and the pokemon
     func fetchPokemon(completion: @escaping ([String], [Pokemon]) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             let sectionLetters = self.pokemonByFirstLetter.keys.sorted()
             var pokemon = [Pokemon]()
             for section in sectionLetters {
