@@ -25,11 +25,7 @@ class PokemonListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sectionLetters = pokemonByFirstLetter.keys.sorted()
-        for section in sectionLetters {
-            if let alphabetizedPokemon = pokemonByFirstLetter[section] {
-                pokemon.append(contentsOf: alphabetizedPokemon)
-            }
-        }
+        pokemon = sectionLetters.compactMap { pokemonByFirstLetter[$0] }.flatMap { $0 }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
