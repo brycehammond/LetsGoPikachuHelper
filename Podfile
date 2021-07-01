@@ -6,11 +6,12 @@ target 'LetsGoPikachuHelper' do
   use_frameworks!
 
   # Pods for LetsGoPikachuHelper
+  pod 'SnapKit'
 
   target 'LetsGoPikachuHelperTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Nimble', '~> 9'
+    #pod 'Nimble', '~> 9'
   end
 
   target 'LetsGoPikachuHelperUITests' do
